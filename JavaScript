@@ -1,0 +1,12 @@
+const lampLight = document.querySelector('.lamp-light');
+const lampSwitch = document.querySelector('.switch');
+
+lampSwitch.addEventListener('click', () => {
+  if (lampSwitch.classList.contains('active')) {
+    lampSwitch.classList.remove('active');
+    lampLight.style.display = 'none';
+  } else {
+    lampSwitch.classList.add('active');
+    lampLight.style.display = 'block';
+  }
+});
